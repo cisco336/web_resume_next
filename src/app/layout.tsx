@@ -22,7 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${notoSans.variable} antialiased overflow-hidden w-full h-full flex flex-col lg:py-16`}>
+				className={`${notoSans.variable} antialiased overflow-hidden w-full h-full flex flex-col lg:pt-16`}>
 				<div className='grid grid-cols-[200px_1fr]  grow max-w-[700px] w-full lg:mx-auto shadow-lg'>
 					<Nav />
 					<div className='col-2 bg-white p-8'>{children}</div>

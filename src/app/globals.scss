@@ -38,4 +38,20 @@
 	p {
 		@apply text-base text-sm/7;
 	}
+
+	.card {
+		@apply bg-white shadow-lg rounded-lg overflow-hidden;
+		&-header {
+			@apply grid grid-cols-[1fr] grid-rows-[1fr] bg-gray-200;
+			& img {
+				@apply row-[1] col-[1];
+			}
+			&-title {
+				@apply text-lg font-bold p-4 row-[1] col-[1] my-auto text-2xl;
+			}
+		}
+		&-body {
+			@apply p-4;
+		}
+	}
 }
