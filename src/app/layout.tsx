@@ -19,6 +19,14 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const mouse = (
+		<div className='absolute top-[50%] right-[2%] w-[25%] rotate-[-33deg]'>
+			<img
+				src='img/mouseMockup.png'
+				className='drop-shadow-[-21px_24px_17px_rgba(0,0,0,0.25)]'
+			/>
+		</div>
+	);
 	return (
 		<html lang='en'>
 			<body
