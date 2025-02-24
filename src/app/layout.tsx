@@ -27,10 +27,10 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden w-full h-full flex flex-col`}>
-				<div className='grid grid-cols-[200px_1fr]  grow max-w-[800px] w-full lg:mx-auto lg:p-16'>
+				className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden w-full h-full flex flex-col lg:py-16`}>
+				<div className='grid grid-cols-[200px_1fr]  grow max-w-[800px] w-full lg:mx-auto shadow-lg'>
 					<Nav />
-					<div className='border-4 border-warning col-2'>{children}</div>
+					<div className='col-2 bg-white p-16'>{children}</div>
 				</div>
 			</body>
 		</html>

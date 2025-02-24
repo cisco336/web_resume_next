@@ -19,3 +19,19 @@
 		);
 	}
 }
+
+@layer components {
+	.title {
+		@apply font-bold;
+		margin: 10px 0;
+		&::after {
+			content: '_';
+			font-family: inherits;
+			font-size: inherits;
+		}
+	}
+
+	.date {
+		@apply text-xs font-bold;
+	}
+}
