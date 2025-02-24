@@ -22,10 +22,12 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${notoSans.variable} antialiased overflow-hidden w-full h-full flex flex-col lg:pt-16`}>
-				<div className='grid grid-cols-[200px_1fr]  grow max-w-[700px] w-full lg:mx-auto shadow-lg'>
+				className={`${notoSans.variable} antialiased overflow-hidden w-full flex flex-col lg:pt-16`}>
+				<div className='flex max-w-[700px]  w-full lg:mx-auto shadow-lg h-[calc(100vh-4rem)]'>
 					<Nav />
-					<div className='col-2 bg-white p-8'>{children}</div>
+					<div className='col-2 bg-white p-8 max-h-full overflow-y-auto'>
+						{children}
+					</div>
 				</div>
 			</body>
 		</html>
