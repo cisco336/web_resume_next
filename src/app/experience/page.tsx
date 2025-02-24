@@ -59,15 +59,24 @@ const Experience = () => {
 	return (
 		<div>
 			<h3 className='title text-2xl'>Experience</h3>
-			{experience.map((exp, index) => (
-				<Card
-					key={index}
-					title={exp.title}
-					role={exp.role}
-					date={exp.date}
-					imageUrl={exp.imageUrl}
-				/>
-			))}
+			<p className='pb-6'>
+				Throughout my career, I have had the opportunity to work with a diverse
+				range of technologies and collaborate with talented teams on innovative
+				projects. My experiences span various roles, where I have honed my
+				skills in both front-end and back-end development, focusing on creating
+				user-friendly applications that meet business needs.
+			</p>
+			<div className='grid grid-cols-[repeat(auto-fit,_minmax(150,_1fr))] gap-4'>
+				{experience.map((exp, index) => (
+					<Card
+						key={index}
+						title={exp.title}
+						role={exp.role}
+						date={exp.date}
+						imageUrl={exp.imageUrl}
+					/>
+				))}
+			</div>
 		</div>
 	);
 };
