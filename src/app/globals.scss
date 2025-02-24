@@ -34,4 +34,8 @@
 	.date {
 		@apply text-xs font-bold;
 	}
+
+	p {
+		@apply text-base text-sm/7;
+	}
 }

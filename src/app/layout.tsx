@@ -1,16 +1,11 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 import './globals.scss';
 
 import { Avatar, Header, Nav, ContactData } from '@/components';
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
+const notoSans = Noto_Sans({
+	variable: '--font-noto-sans',
 	subsets: ['latin'],
 });
 
@@ -27,10 +22,10 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden w-full h-full flex flex-col lg:py-16`}>
-				<div className='grid grid-cols-[200px_1fr]  grow max-w-[800px] w-full lg:mx-auto shadow-lg'>
+				className={`${notoSans.variable} antialiased overflow-hidden w-full h-full flex flex-col lg:py-16`}>
+				<div className='grid grid-cols-[200px_1fr]  grow max-w-[700px] w-full lg:mx-auto shadow-lg'>
 					<Nav />
-					<div className='col-2 bg-white p-16'>{children}</div>
+					<div className='col-2 bg-white p-8'>{children}</div>
 				</div>
 			</body>
 		</html>

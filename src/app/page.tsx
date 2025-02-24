@@ -1,14 +1,21 @@
 export default function Home() {
 	const content = (
-		<p>
-			Dynamic Full-Stack Developer with a proven track record of delivering
-			high-quality web applications using React.js, Angular, and Node.js. I
-			specialize in crafting intuitive user interfaces and driving the success
-			of diverse projects through innovative solutions and collaborative
-			teamwork. With strong expertise in both front-end and back-end
-			development, I am dedicated to creating seamless, efficient, and
-			user-friendly digital experiences.
-		</p>
+		<div>
+			<p>
+				Dynamic Full-Stack Developer with a proven track record of delivering
+				high-quality web applications using React.js, Angular, and Node.js.
+			</p>
+			<p>
+				I specialize in crafting intuitive user interfaces and driving the
+				success of diverse projects through innovative solutions and
+				collaborative teamwork.
+			</p>
+			<p>
+				With strong expertise in both front-end and back-end development, I am
+				dedicated to creating seamless, efficient, and user-friendly digital
+				experiences.
+			</p>
+		</div>
 	);
 
 	const lastExp = (
@@ -23,9 +30,7 @@ export default function Home() {
 				interfaces for British Airways using Next.js and Tailwind CSS.
 			</p>
 			<div className='col-[2] row-[2]'>
-				<h2 className='title'>
-					Fullstack Node/React Developer Senior at Gorilla Logic
-				</h2>
+				<h2 className='title'>Fullstack Node/React Dev at Gorilla Logic</h2>
 				<h3 className='date'>January 2021 - January 2024</h3>
 			</div>
 			<p>
